@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>С Твоим днем, Любовь моя!!! 🖤</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=UnifrakturCook:wght@700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background:
+radial-gradient(circle at 50% -10%, #54133b 0%, transparent 35%),
+radial-gradient(circle at 10% 50%, #24103c 0%, transparent 30%),
+radial-gradient(circle at 90% 80%, #350c1c 0%, transparent 30%),
+#07070a;
+color: #eeeeee;
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+pointer-events: none;
+z-index: 10;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,0.35),
+transparent 20%,
+transparent 80%,
+rgba(0,0,0,0.35)
+);
+}
+
+.particles {
+position: fixed;
+inset: 0;
+pointer-events: none;
+overflow: hidden;
+z-index: 0;
+}
+
+.particle {
+position: absolute;
+width: 3px;
+height: 3px;
+background: #d62c69;
+border-radius: 50%;
+box-shadow: 0 0 12px #d62c69;
+animation: drift linear infinite;
+}
+
+.particle:nth-child(1) {
+left: 8%;
+top: 90%;
+animation-duration: 8s;
+}
+
+.particle:nth-child(2) {
+left: 18%;
+top: 70%;
+animation-duration: 11s;
+}
+
+.particle:nth-child(3) {
+left: 32%;
+top: 85%;
+animation-duration: 9s;
+}
+
+.particle:nth-child(4) {
+left: 47%;
+top: 95%;
+animation-duration: 13s;
+}
+
+.particle:nth-child(5) {
+left: 62%;
+top: 75%;
+animation-duration: 10s;
+}
+
+.particle:nth-child(6) {
+left: 78%;
+top: 88%;
+animation-duration: 12s;
+}
+
+.particle:nth-child(7) {
+left: 91%;
+top: 65%;
+animation-duration: 9s;
+}
+
+@keyframes drift {
+from {
+transform: translateY(0);
+opacity: 0;
+}
+
+20% {
+opacity: 0.8;
+}
+
+to {
+transform: translateY(-110vh);
+opacity: 0;
+}
+}
+
+.hero {
+position: relative;
+z-index: 1;
+min-height: 100vh;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+padding: 50px 20px;
+
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.top-line {
+font-size: 12px;
+letter-spacing: 7px;
+text-transform: uppercase;
+color: #a5a5ad;
+margin-bottom: 30px;
+}
+
+.hero h1 {
+font-size: clamp(70px, 16vw, 180px);
+line-height: 0.85;
+font-weight: 900;
+letter-spacing: -7px;
+
+color: #f3f3f3;
+
+text-shadow:
+0 0 15px rgba(255,255,255,0.15),
+0 0 50px rgba(204,35,94,0.3);
+}
+
+.hero h1 span {
+color: #d72d68;
+
+text-shadow:
+0 0 15px rgba(215,45,104,0.8),
+0 0 50px rgba(215,45,104,0.4);
+}
+
+.birthday {
+margin-top: 35px;
+
+font-size: clamp(22px, 4vw, 34px);
+font-weight: 800;
+letter-spacing: -1px;
+
+color: white;
+}
+
+.birthday span {
+color: #e23973;
+}
+
+.number {
+font-size: clamp(80px, 17vw, 160px);
+font-weight: 900;
+
+color: transparent;
+-webkit-text-stroke: 2px #e23973;
+
+text-shadow:
+0 0 30px rgba(226,57,115,0.4);
+
+line-height: 1;
+margin: 10px 0;
+}
+
+.hero-description {
+max-width: 620px;
+
+color: #a9a9b2;
+
+font-size: 16px;
+line-height: 1.8;
+
+margin-top: 15px;
+}
+
+.buttons {
+display: flex;
+gap: 15px;
+margin-top: 45px;
+
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.button {
+border: 1px solid rgba(226,57,115,0.7);
+
+background:
+linear-gradient(
+135deg,
+rgba(226,57,115,0.2),
+rgba(80,20,50,0.2)
+);
+
+color: #ffffff;
+
+padding: 17px 30px;
+
+font-family: 'Inter', sans-serif;
+
+font-size: 13px;
+font-weight: 800;
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+cursor: pointer;
+transition: 0.3s;
+
+box-shadow:
+0 0 20px rgba(226,57,115,0.08);
+}
+
+.button:hover {
+background: #d82e68;
+
+transform: translateY(-4px);
+
+box-shadow:
+0 10px 35px rgba(216,46,104,0.35);
+}
+
+.button:active {
+transform: scale(0.97);
+}
+
+section {
+position: relative;
+z-index: 1;
+
+max-width: 1000px;
+
+margin: auto;
+
+padding: 110px 25px;
+}
+
+.section-label {
+font-size: 11px;
+letter-spacing: 5px;
+text-transform: uppercase;
+
+color: #d82e68;
+
+margin-bottom: 15px;
+}
+
+.section-title {
+font-size: clamp(42px, 8vw, 80px);
+
+font-weight: 900;
+
+letter-spacing: -4px;
+
+color: #f1f1f1;
+
+margin-bottom: 50px;
+}
+
+.section-title span {
+color: #d82e68;
+}
+
+.letter {
+display: none;
+}
+
+.letter.active {
+display: block;
+animation: reveal 0.8s ease;
+}
+
+@keyframes reveal {
+
+from {
+opacity: 0;
+transform: translateY(40px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.letter-card {
+position: relative;
+
+background:
+linear-gradient(
+135deg,
+rgba(255,255,255,0.055),
+rgba(255,255,255,0.015)
+);
+
+border: 1px solid rgba(255,255,255,0.1);
+
+padding: clamp(28px, 6vw, 65px);
+
+box-shadow:
+0 30px 100px rgba(0,0,0,0.4);
+
+backdrop-filter: blur(10px);
+}
+
+.letter-card::before {
+content: "";
+
+position: absolute;
+
+left: 0;
+top: 0;
+
+width: 3px;
+height: 100%;
+
+background: linear-gradient(
+#d82e68,
+transparent,
+#7a38a8
+);
+}
+
+.letter-card p {
+color: #c7c7cc;
+
+font-size: 16px;
+line-height: 2;
+
+margin-bottom: 28px;
+}
+
+.letter-card .special {
+color: #f0f0f0;
+
+font-weight: 700;
+font-size: 21px;
+line-height: 1.7;
+}
+
+.letter-card .center {
+text-align: center;
+
+color: #e23a72;
+
+font-size: 25px;
+
+font-weight: 800;
+
+margin: 45px 0;
+}
+
+.signature {
+margin-top: 50px;
+
+text-align: right;
+
+font-size: 18px;
+
+color: #eeeeee;
+}
+
+#photos {
+display: none;
+}
+
+#photos.active {
+display: block;
+animation: reveal 0.8s ease;
+}
+
+.photo-header {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.photo-header .section-title {
+margin-bottom: 15px;
+}
+
+.photo-header p {
+color: #888891;
+}
+
+.gallery {
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 25px;
+}
+
+.photo {
+position: relative;
+
+overflow: hidden;
+
+background: #111116;
+
+border: 1px solid rgba(255,255,255,0.1);
+
+padding: 8px;
+
+transition: 0.4s;
+}
+
+.photo::after {
+content: "";
+
+position: absolute;
+
+inset: 8px;
+
+border: 1px solid rgba(216,46,104,0.25);
+
+pointer-events: none;
+}
+
+.photo:hover {
+transform: translateY(-8px);
+
+border-color: rgba(216,46,104,0.6);
+
+box-shadow:
+0 20px 50px rgba(216,46,104,0.15);
+}
+
+.photo img {
+width: 100%;
+
+aspect-ratio: 4 / 3;
+
+object-fit: cover;
+
+display: block;
+
+filter: saturate(0.9);
+}
+
+.final {
+text-align: center;
+
+padding-bottom: 150px;
+}
+
+.final-line {
+width: 80px;
+height: 1px;
+
+background: #d82e68;
+
+margin: 0 auto 40px;
+
+box-shadow: 0 0 15px #d82e68;
+}
+
+.final h2 {
+font-size: clamp(45px, 9vw, 95px);
+
+font-weight: 900;
+
+letter-spacing: -5px;
+
+color: white;
+}
+
+.final h2 span {
+color: #d82e68;
+}
+
+.final p {
+max-width: 550px;
+
+margin: 30px auto 0;
+
+color: #92929a;
+
+font-size: 16px;
+
+line-height: 1.8;
+}
+
+.final-heart {
+margin-top: 40px;
+
+font-size: 50px;
+
+filter:
+drop-shadow(0 0 20px rgba(216,46,104,0.7));
+}
+
+@media (max-width: 650px) {
+
+.hero h1 {
+letter-spacing: -4px;
+}
+
+.number {
+-webkit-text-stroke: 1px #e23973;
+}
+
+.buttons {
+width: 100%;
+}
+
+.button {
+width: 100%;
+max-width: 350px;
+}
+
+.gallery {
+grid-template-columns: 1fr;
+}
+
+.letter-card p {
+font-size: 15px;
+}
+
+.section-title {
+letter-spacing: -2px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="particles">
+
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+<div class="particle"></div>
+
+</div>
+
+
+<header class="hero">
+
+<div class="top-line">
+22 СЕНТЯБРЯ · 2026
+</div>
+
+<h1>
+IS<span>MA</span>
+</h1>
+
+<div class="birthday">
+С ДНЁМ РОЖДЕНИЯ
+</div>
+
+<div class="number">
+23
+</div>
+
+<div class="hero-description">
+
+Сегодня день рождения у человека,
+которого я люблю больше всего.
+
+<br>
+
+ 🖤
+
+</div>
+
+
+<div class="buttons">
+
+<button class="button" onclick="openLetter()">
+Читать поздравление
+</button>
+
+<button class="button" onclick="openPhotos()">
+Имбульки
+</button>
+
+</div>
+
+</header>
+
+
+<section id="letter" class="letter">
+
+<div class="section-label">
+для тебя
+</div>
+
+<h2 class="section-title">
+Моё <span>письмо.</span>
+</h2>
+
+
+<div class="letter-card">
+
+<p class="special">
+С Твоим Днем, любовь всей моей жизни!!!🩷🩷🩷
+</p>
+
+<p>
+Желаю тебе всего всего всего наилучшего.
+Чтобы ты всегда улыбался, а если и плакал то только от радости.
+И титанчика в доте апнуть само собой💋
+</p>
+
+<p>
+Спасибо тебе за то, что однажды появился в моей жизни.
+</p>
+
+<p>
+Хочу чтоб ты знал,
+Ты человек, которым я дорожу больше всего.
+</p>
+
+<p>
+Когда я была маленькой и представляла свою будущую жизнь,
+я иногда представляла рядом с собой человека.
+Доброго. Ласкового. Понимающего. Сильного. Умного.
+Надёжного. Уверенного. И невероятно красивого.
+</p>
+
+<p>
+Я даже не знала тогда, каким именно он будет.
+Не знала его имени, не знала, где и когда мы встретимся.
+</p>
+
+<p class="center">
+А сейчас я смотрю на тебя и понимаю —
+оказывается, тем самым парнем из моих детских мечтаний был именно ты.
+</p>
+
+<p>
+Будто всё, о чём я когда-то мечтала,
+однажды обрело твое лицо, твой голос,
+твои глаза и твое сердце.
+</p>
+
+<p>
+Мне очень тяжело описать словами, насколько много ты для меня значишь.
+Потому что ты это уже не просто любимый человек.
+Ты стал частью моего мира. Моих мыслей. Моих мечтаний. Моего будущего.
+</p>
+
+<p>
+И сегодня я хочу оставить прошлое там, где ему и место, в прошлом.
+</p>
+
+<p>
+Потому что сейчас я понимаю 
+все события, которые когда-то происходили со мной,
+каким бы сложными они ни были,
+в итоге привели меня к Тебе.
+</p>
+
+<p>
+И, наверное, я бы не стала менять ни одного из них,
+если бы знала, что в конце этого пути встречу моего любимого.
+</p>
+
+<p>
+Говорят, любовь это чувство.
+Но я думаю, что любовь это ещё и выбор.
+</p>
+
+<p class="center">
+И я выбираю тебя.
+</p>
+
+<p>
+Выбираю любить тебя сегодня.
+Завтра.
+Через год.
+Через десять лет.
+</p>
+
+<p>
+Я выбираю тебя даже тогда, когда бывает трудно.
+Даже тогда, когда мы не понимаем друг друга.
+Даже тогда, когда между нами появляются ссоры,
+обиды или моменты, когда кажется, что всё слишком сложно.
+</p>
+
+<p>
+Потому что мы уже прошли через многое.
+И несмотря ни на что, мы всё ещё здесь.
+</p>
+
+<p class="center">
+Вместе.
+</p>
+
+<p>
+И для меня это значит очень много.
+</p>
+
+<p>
+Я не обещаю, что наша жизнь всегда будет идеальной.
+Но я обещаю, что хочу проходить её именно с тобой.
+</p>
+
+<p>
+Хочу смеяться с тобой до боли в животе.
+Сливать и поднимать рейтинг в доте:)
+Хочу засыпать рядом и просыпаться рядом.
+Хочу поддерживать тебя, когда тебе тяжело,
+и быть рядом, когда у тебя всё получается.
+Хочу узнавать тебя заново даже спустя много лет.
+</p>
+
+<p>
+Хочу создавать с тобой наши маленькие традиции,
+наши воспоминания, наши фотографии,
+наши смешные истории, наши путешествия и наш дом.
+</p>
+
+<p>
+Хочу однажды оглянуться назад и понять,
+что мы прожили огромную жизнь,
+наполненную любовью.
+</p>
+
+<p>
+И если бы мне снова дали возможность загадать желание
+и спросили, кого я хочу увидеть рядом с собой в будущем…
+</p>
+
+<p class="center">
+Я бы снова выбрала тебя Любимый мой.
+</p>
+
+<p>
+Потому что ты именно тот человек,
+которого я когда-то представляла,
+ещё даже не зная, что однажды встречу его.
+</p>
+
+<p>
+Спасибо тебе за каждый день.
+За каждую улыбку.
+За объятия.
+За моменты, когда ты просто рядом.
+За твою заботу.
+За твоё терпение.
+И просто за то, что ты есть.
+</p>
+
+<p class="center">
+Я очень тебя люблю.
+</p>
+
+<p>
+И в твой день рождения я хочу пожелать тебе самого главного,
+быть счастливым.
+</p>
+
+<p>
+Пусть у тебя получается всё, к чему ты стремишься.
+Пусть у тебя будет много сил, вдохновения,
+возможностей и причин улыбаться.
+</p>
+
+<p>
+А я очень хочу быть рядом и видеть,
+как исполняются твои мечты.
+</p>
+
+<p>
+Сегодня твой день.
+</p>
+
+<p>
+Но для меня это ещё и день,
+когда я особенно сильно благодарю Бога
+за то, что когда-то наши дороги пересеклись.
+</p>
+
+<p class="center">
+С днём рождения, моя любовь.
+</p>
+
+<p class="center">
+Я выбираю тебя.
+Сегодня. Завтра. И каждый день после.
+</p>
+
+<div class="signature">
+С любовью,<br>
+Элечк мортал комбт. ❤️🩷🩷
+</div>
+
+</div>
+
+</section>
+
+
+<section id="photos">
+
+<div class="photo-header">
+
+<div class="section-label">
+наши моменты
+</div>
+
+<h2 class="section-title">
+Имбульки<span>.</span>
+</h2>
+
+<p>
+фоточк тип ты и я
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<div class="photo">
+<img src="photo1.jpg" alt="Фото">
+</div>
+
+<div class="photo">
+<img src="photo2.jpg" alt="Фото">
+</div>
+
+<div class="photo">
+<img src="photo3.jpg" alt="Фото">
+</div>
+
+<div class="photo">
+<img src="photo4.jpg" alt="Фото">
+</div>
+
+<div class="photo">
+<img src="photo5.jpg" alt="Фото">
+</div>
+
+<div class="photo">
+<img src="photo6.jpg" alt="Фото">
+</div>
+
+</div>
+
+</section>
+
+
+<section class="final">
+
+<div class="final-line"></div>
+
+<h2>
+С днём <span>рождения.</span>
+</h2>
+
+<p>
+Пусть 23 год твоей жизни будет наполнен
+моментами, которыми тебе захочется гордиться.
+А я хочу быть рядом со всеми ними.
+</p>
+
+<div class="final-heart">
+🖤
+</div>
+
+<p>
+Я люблю тебя.
+</p>
+
+</section>
+
+
+<script>
+
+function openLetter() {
+
+const letter = document.getElementById("letter");
+
+letter.classList.add("active");
+
+setTimeout(function() {
+
+letter.scrollIntoView({
+behavior: "smooth"
+});
+
+}, 100);
+}
+
+
+function openPhotos() {
+
+const photos = document.getElementById("photos");
+
+photos.classList.add("active");
+
+setTimeout(function() {
+
+photos.scrollIntoView({
+behavior: "smooth"
+});
+
+}, 100);
+}
+
+</script>
+
+</body>
+</html>
